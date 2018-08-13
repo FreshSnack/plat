@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>折线图</title>
+    <script type="text/javascript" src="/plat/medias/lib/jquery.js"></script>
+    <script type="text/javascript" src="/plat/medias/lib/echarts.js"></script>
+    <script type="text/javascript" src="/plat/medias/js/lineChart.js"></script>
+    <style type="text/css">
+        select {
+            width: 80px;
+        }
+        input[type='text'] {
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+<div id="div1" style="height:400px"></div>
+<div id="operation">
+    <span>选择日期
+        <select>
+            <option value="Monday" checked>星期一</option>
+            <option value="Tuesday">星期二</option>
+            <option value="wednesday">星期三</option>
+            <option value="Thursday">星期四</option>
+            <option value="Friday">星期五</option>
+            <option value="Saturday">星期六</option>
+            <option value="Sunday">星期日</option>
+        </select>
+    </span>
+    <span>幅度&nbsp;<input type="text" name="scope" value="1"></span>
+    <input type="button" onclick="up()" value="升高"/>
+    <input type="button" onclick="down()" value="降低"/>
+</div>
+</body>
+</html>
